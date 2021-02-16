@@ -793,7 +793,7 @@
 			height: 2.65em;
 			line-height: 2.65em;
 		}
-
+			
 		input[type="submit"].alt,
 		input[type="reset"].alt,
 		input[type="button"].alt,
@@ -1042,7 +1042,7 @@
 		text-align: center;
 		position: relative;
 	}
-
+	
 		#banner:before {
 			content: '';
 			position: absolute;
@@ -1107,7 +1107,7 @@
 				color: #ffffff;
 				text-decoration: none;
 			}
-
+			
 /* Footer */
 
 	#footer {
@@ -1144,3 +1144,77 @@
 		#footer .icons a {
 			color: #bbb;
 		}
+
+/********************** MEDIA QUERIES *************************************************************************************** */
+@media (max-width: 500px) and (orientation: portrait){
+	#banner {
+		background-color: rgb(255, 255, 255);
+		background-image: url("https://res.cloudinary.com/ashsheran1/image/upload/c_scale,w_1400,q_auto,f_auto/v1613436933/shrimpBowl_dlncpu.webp");
+		background-size: cover;
+		background-position: 50% 100%;
+		background-repeat: no-repeat;
+		color: #d8d8d8;
+		padding: 1em 0;
+		text-align: center;
+		position: relative;
+	}		
+	#banner .inner {
+		position: relative;
+		z-index: 1;		
+		left: 5%;
+		right: 5%;
+		width: 90%;
+	}
+	#banner h2 {
+		font-size: 2em;
+		font-weight: 500;
+		line-height: 1.5em;
+		margin: 0 0 1em 0;
+		padding: 0;
+		position: relative;
+		top: 5px;
+	}
+
+	#banner p {
+		font-size: 2.5em;
+		margin-bottom: 2em;			
+		color: rgb(240, 240, 240);
+		font-weight: 400;
+	}
+
+		#banner p a {
+			color: #ffffff;
+			text-decoration: none;
+		}
+
+	input[type="submit"].big,
+	input[type="reset"].big,
+	input[type="button"].big,
+	.button.big {
+		font-size: 3.5vw;
+		margin: 1.5em;		
+		width: 80%;
+	}
+} 
+@media (max-width: 850px) and (orientation: landscape){
+		
+	#banner p {
+		font-size: 2em;
+		margin-bottom: 1.5em;			
+	}
+
+	input[type="submit"].big,
+	input[type="reset"].big,
+	input[type="button"].big,
+	.button.big {
+		font-size: 2.5vw;
+		margin: 1.5em;		
+		width: 80%;
+	}
+	ul.actions li {
+		padding: 0 0em 0 0;		
+	}
+} 
+
+
+} 
